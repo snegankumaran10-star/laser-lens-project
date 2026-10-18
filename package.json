@@ -1,0 +1,14 @@
+{
+  "name": "lease-lens",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently \"npm --prefix client run dev -- --host 0.0.0.0 --port 5180\" \"npm --prefix server run dev\"",
+    "client": "npm --prefix client run dev -- --host 0.0.0.0 --port 5180",
+    "server": "npm --prefix server run dev",
+    "build": "npm --prefix client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
